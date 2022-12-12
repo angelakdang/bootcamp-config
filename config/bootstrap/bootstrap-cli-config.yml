@@ -1,6 +1,6 @@
 ---
 bootstrap:
-  # This is a template bootstrap CLI file that will need to be completed. For a more complete example look at 
+  # This is a template bootstrap CLI file that will need to be completed. For a more complete example look at
   # https://github.com/cognitedata/inso-bootstrap-cli/blob/main/configs/config-deploy-example-v2.yml
 
     features:
@@ -54,7 +54,7 @@ bootstrap:
 
     # Mapping between IDP (Azure Active Directory) groups and CDF groups.
     idp-cdf-mappings:
-    # Support multiple CDF Projects, like dev/test/prod in one config. 
+    # Support multiple CDF Projects, like dev/test/prod in one config.
         - cdf-project: cdf-bootcamp-24-test
           mappings:
               - cdf-group: cdf:root
@@ -85,9 +85,9 @@ bootstrap:
 
           # Node names will normally follow src:001:srcname or uc:001:usecasename naming convention
           ns-nodes:
-              - node-name: sap
+              - node-name: src:001:sap
                 description: Data from SAP
-              - node-name: opcua
+              - node-name: src:002:opcua
                 description: Data from OPCUA
 
         - ns-name: uc
